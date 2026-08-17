@@ -1,0 +1,59 @@
+{
+    "dataset": "InSDN",
+    "detector_type": "validation_calibrated_hybrid_class_specific_rejection",
+    "known_classes": [
+        "DDoS",
+        "Normal",
+        "Probe"
+    ],
+    "open_labels_order": [
+        "Normal",
+        "DDoS",
+        "Probe",
+        "New Attack"
+    ],
+    "weights": {
+        "W_SIM": 0.45,
+        "W_CONF": 0.45,
+        "W_DISAGREE": 0.1
+    },
+    "known_rejection_rate": 0.02,
+    "class_reject_rates": {
+        "DDoS": 0.005,
+        "Normal": 0.01,
+        "Probe": 0.01
+    },
+    "closed_set_validation_metrics_percent": {
+        "CA": 99.99509106082176,
+        "F1": 99.9950815165128,
+        "Recall": 99.99529759455505,
+        "Precision": 99.99486562478111,
+        "MCC": 99.99261809050785
+    },
+    "validation_calibration": {
+        "validation_rejection_ratio_percent": 0.8222473123558,
+        "validation_accuracy_after_rejection_percent": 99.1777526876442,
+        "similarity_thresholds": {
+            "DDoS": 0.9666178822517395,
+            "Normal": 0.6716724038124084,
+            "Probe": 0.902604341506958
+        },
+        "confidence_thresholds": {
+            "DDoS": 0.9998165965080261,
+            "Normal": 0.9995928406715393,
+            "Probe": 0.9999725818634033
+        },
+        "hybrid_thresholds": {
+            "DDoS": 0.6915969848632812,
+            "Normal": 0.4826982617378235,
+            "Probe": 0.162941575050354
+        }
+    },
+    "open_set_test_metrics_percent": {
+        "CA": 98.66824644549763,
+        "F1": 94.94734540532244,
+        "Recall": 96.15523638433922,
+        "Precision": 93.9051858728665,
+        "MCC": 98.06731859786414
+    }
+}
