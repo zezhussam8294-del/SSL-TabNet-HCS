@@ -1,0 +1,5 @@
+,Pred_Normal,Pred_ddos,Pred_probe,Pred_New Attack
+True_Normal,42029,16,0,2268
+True_ddos,0,14842,0,87
+True_probe,0,0,28737,1554
+True_New Attack,8172,42,2425,32394

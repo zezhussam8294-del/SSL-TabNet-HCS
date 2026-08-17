@@ -1,0 +1,60 @@
+{
+    "dataset": "SDNFlow",
+    "detector_type": "validation_calibrated_hybrid_class_specific_rejection",
+    "new_attack_label": "New Attack",
+    "known_classes": [
+        "Normal",
+        "ddos",
+        "probe"
+    ],
+    "open_labels_order": [
+        "Normal",
+        "ddos",
+        "probe",
+        "New Attack"
+    ],
+    "weights": {
+        "W_SIM": 0.45,
+        "W_CONF": 0.45,
+        "W_DISAGREE": 0.1
+    },
+    "known_rejection_rate": 0.05,
+    "class_reject_rates": {
+        "Normal": 0.05,
+        "ddos": 0.01,
+        "probe": 0.05
+    },
+    "closed_set_validation_metrics_percent": {
+        "CA": 99.80119062245205,
+        "F1": 99.75766157372803,
+        "Recall": 99.68077540759876,
+        "Precision": 99.83545353610174,
+        "MCC": 99.67559851310814
+    },
+    "validation_calibration": {
+        "validation_rejection_ratio_percent": 4.332480761283549,
+        "validation_accuracy_after_rejection_percent": 95.65076563948487,
+        "similarity_thresholds": {
+            "Normal": 0.845538854598999,
+            "ddos": 0.858177125453949,
+            "probe": 0.9427334070205688
+        },
+        "confidence_thresholds": {
+            "Normal": 0.9993519186973572,
+            "ddos": 0.8937130570411682,
+            "probe": 0.9945367574691772
+        },
+        "hybrid_thresholds": {
+            "Normal": 0.10485437512397766,
+            "ddos": 1.6569864749908447,
+            "probe": 0.10323803126811981
+        }
+    },
+    "open_set_test_metrics_percent": {
+        "CA": 89.0137742709292,
+        "F1": 90.90972970932229,
+        "Recall": 91.102468535998,
+        "Precision": 91.19563976229956,
+        "MCC": 84.97417759308362
+    }
+}
