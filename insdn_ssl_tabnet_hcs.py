@@ -93,14 +93,14 @@ from pytorch_tabnet.tab_model import TabNetClassifier
 
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.join(PROJECT_ROOT, "data", "insdn")
+BASE_DIR = os.path.join(PROJECT_ROOT, "data", "InSDN")
 
 PRETRAIN_PATH = os.path.join(BASE_DIR, "pretrain_normal_train.csv")
 FINETUNE_TRAIN_PATH = os.path.join(BASE_DIR, "finetune_train.csv")
 FINETUNE_VAL_PATH = os.path.join(BASE_DIR, "finetune_val.csv")
 OPEN_TEST_PATH = os.path.join(BASE_DIR, "open_test.csv")
 
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs", "insdn")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs", "InSDN")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 RANDOM_STATE = 42
